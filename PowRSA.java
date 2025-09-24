@@ -16,7 +16,7 @@ public class PowRSA {
     
     public static void main(String[] args) {
         try {
-            System.out.println("=== 高级RSA非对称加密+工作量证明（POW） ===\n");
+            System.out.println("=== RSA非对称加密+工作量证明（POW） ===\n");
 
             int difficulty = args.length > 0 ? Integer.parseInt(args[0]) : 4;
             String nickname = args.length > 1 ? args[1] : "chumeng";
@@ -265,4 +265,5 @@ public class PowRSA {
         KeyFactory keyFactory = KeyFactory.getInstance("RSA");
         return keyFactory.generatePrivate(spec);
     }
+
 }
